@@ -14,9 +14,10 @@ export Op_name="OpenWrt"                # 修改主机名称为OpenWrt-123(填0�
 export Kernel_partition_size="0"            # 内核分区大小,每个机型默认值不一样 (填写您想要的数值,默认一般16,数值以MB计算，填0为不作修改),如果你不懂就填0
 export Rootfs_partition_size="0"            # 系统分区大小,每个机型默认值不一样 (填写您想要的数值,默认一般300左右,数值以MB计算，填0为不作修改),如果你不懂就填0
 
-# 添加额外插件
-
+# 删除原有插件
 rm -rf feeds/luci/applications/luci-app-unblockneteasemusic
+
+# 添加额外插件
 git clone --depth=1 https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic package/luci-app-unblockneteasemusic
 
 # 默认主题设置
