@@ -18,7 +18,7 @@ export Rootfs_partition_size="0"            # 系统分区大小,每个机型默
 rm -rf feeds/luci/applications/luci-app-unblockneteasemusic
 
 # 添加额外插件
-git clone --depth=1 https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic package/luci-app-unblockneteasemusic
+git clone --branch master https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic package/luci-app-unblockneteasemusic
 
 # 默认主题设置
 export Mandatory_theme="argon"              # 将bootstrap替换您需要的主题为必选主题(可自行更改您要的,源码要带此主题就行,填写名称也要写对) (填写主题名称,填0为不作修改)
